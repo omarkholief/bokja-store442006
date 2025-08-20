@@ -72,8 +72,8 @@
         <input type="password" v-model="newPassword" placeholder="Enter new password" class="w-full border rounded-lg px-3 py-2 mb-3" />
         <input type="password" v-model="confirmPassword" placeholder="Confirm password" class="w-full border rounded-lg px-3 py-2 mb-4" />
         <div class="flex justify-end gap-3">
-          <button @click="showForgotPassword = false" class="px-4 py-2 border rounded-lg">Cancel</button>
-          <button @click="resetPassword" class="px-4 py-2 bg-teal-500 text-white rounded-lg">Save</button>
+          <button @click="showForgotPassword = false" class="px-4 py-2 border rounded-lg cursor-pointer">Cancel</button>
+          <button @click="resetPassword" class="px-4 py-2 bg-teal-500 text-white rounded-lg cursor-pointer">Save</button>
         </div>
       </div>
     </div>
