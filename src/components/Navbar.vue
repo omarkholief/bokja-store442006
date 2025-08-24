@@ -11,7 +11,8 @@
       <!-- Desktop Links -->
       <ul class="hidden md:flex items-center gap-6 text-gray-700 font-medium">
         <router-link v-for="link in links" :key="link.name" :to="link.path"
-          class="hover:text-[#008D7C] border-b-2 border-transparent hover:border-[#008D7C]">{{ link.name }}</router-link>
+          class="hover:text-[#008D7C] border-b-2 border-transparent hover:border-[#008D7C]"
+          active-class="text-[#008D7C] border-b-[#008D7C]">{{ link.name }}</router-link>
       </ul>
 
       <ul class="flex items-center gap-4">
@@ -40,11 +41,11 @@
     <!-- Mobile Links -->
     <div v-if="isOpen" class="md:hidden bg-white border-t">
       <ul class="flex flex-col p-4 gap-3 text-gray-700 font-medium">
-        <router-link to="/home" class="hover:text-blue-500">Home</router-link>
-        <router-link to="/delivery-points" class="hover:text-blue-500">Delivery Points</router-link>
-        <router-link to="/about" class="hover:text-blue-500">About us</router-link>
-        <router-link to="/contact" class="hover:text-blue-500">Contact us</router-link>
-        <router-link to="/exclusive-offers" class="hover:text-blue-500">Exclusive offers</router-link>
+        <router-link to="/home" class="hover:text-blue-500 border-b-2 border-transparent w-10" exact-active-class="text-[#008D7C] border-b-[#008D7C]">Home</router-link>
+        <router-link to="/delivery-points" class="hover:text-blue-500 border-b-2 border-transparent" exact-active-class="text-[#008D7C] border-b-[#008D7C]">Delivery Points</router-link>
+        <router-link to="/about" class="hover:text-blue-500 border-b-2 border-transparent w-16" exact-active-class="text-[#008D7C] border-b-[#008D7C]">About us</router-link>
+        <router-link to="/contact" class="hover:text-blue-500 border-b-2 border-transparent w-19" exact-active-class="text-[#008D7C] border-b-[#008D7C]">Contact us</router-link>
+        <router-link to="/exclusive-offers" class="hover:text-blue-500 border-b-2 border-transparent w-28" exact-active-class="text-[#008D7C] border-b-[#008D7C]">Exclusive offers</router-link>
       </ul>
     </div>
   </nav>

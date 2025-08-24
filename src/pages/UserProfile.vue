@@ -8,7 +8,9 @@
         <div class="flex flex-wrap gap-4">
           <button class="text-gray-700 hover:text-blue-500">Password & Security</button>
           <button class="text-gray-700 hover:text-blue-500">Payment</button>
-          <router-link to="/home"><button class="cursor-pointer text-red-500 hover:underline">Logout</button></router-link>
+          <button @click="confirmLogout" class="cursor-pointer text-red-500 hover:underline">
+            Logout
+          </button>
         </div>
       </div>
 
@@ -87,15 +89,18 @@
             <!-- Buttons -->
             <div class="mt-4">
               <template v-if="!isEditing">
-                <button @click="isEditing = true" class="cursor-pointer px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">
+                <button @click="isEditing = true"
+                  class="cursor-pointer px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">
                   <i class="fas fa-edit mr-2"></i>Edit
                 </button>
               </template>
               <template v-else>
-                <button @click="saveChanges" class="cursor-pointer px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 mr-2">
+                <button @click="saveChanges"
+                  class="cursor-pointer px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 mr-2">
                   Save
                 </button>
-                <button @click="cancelEdit" class="cursor-pointer px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">
+                <button @click="cancelEdit"
+                  class="cursor-pointer px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">
                   Cancel
                 </button>
               </template>
@@ -137,6 +142,18 @@ const profile = reactive({
 });
 
 const backup = reactive({ ...profile });
+
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+function confirmLogout() {
+  if (confirm("Are You Sure?")) {
+    router.push("/"); // هنا بيوديه لصفحة اللوج أوت / الصفحة الرئيسية
+  }
+}
+
+
 
 function saveChanges() {
   isEditing.value = false;
