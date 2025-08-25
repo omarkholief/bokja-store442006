@@ -90,6 +90,15 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    // لو رجعت ب back أو forward يحافظ على المكان القديم
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      // غير كده يرجع فوق الصفحة
+      return { top: 0 }
+    }
+  },
 })
 
 export default router

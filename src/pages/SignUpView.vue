@@ -28,24 +28,28 @@
           @blur="validateField('phone')" />
 
         <!-- City -->
-        <InputField icon="fa-city" :options="cities" placeholder="City" v-model="city" :error="errors.city" @blur="validateField('city')" />
+        <InputField icon="fa-city" :options="cities" placeholder="City" v-model="city" :error="errors.city"
+          @blur="validateField('city')" />
 
         <!-- Country -->
-        <SelectField icon="fa-flag" :options="countries" placeholder="Country" v-model="country"
-          :error="errors.country" @blur="validateField('country')" />
+        <SelectField icon="fa-flag" :options="countries" placeholder="Country" v-model="country" :error="errors.country"
+          @blur="validateField('country')" />
 
         <!-- Gender -->
         <SelectField icon="fa-venus-mars" :options="['Male', 'Female']" placeholder="Gender" v-model="gender"
           :error="errors.gender" @blur="validateField('gender')" />
 
         <!-- Date of Birth -->
-        <InputField icon="fa-calendar" placeholder="Date Of Birth" type="date" v-model="dob" :error="errors.dob" @blur="validateField('dob')" />
+        <InputField icon="fa-calendar" placeholder="Date Of Birth" type="date" v-model="dob" :error="errors.dob"
+          @blur="validateField('dob')" />
 
         <!-- Email -->
-        <InputField icon="fa-envelope" placeholder="Email" v-model="email" :error="errors.email" @blur="validateField('email')" />
+        <InputField icon="fa-envelope" placeholder="Email" v-model="email" :error="errors.email"
+          @blur="validateField('email')" />
 
         <!-- Password -->
-        <InputField icon="fa-lock" placeholder="Password" type="password" v-model="password" :error="errors.password" @blur="validateField('password')" />
+        <InputField icon="fa-lock" placeholder="Password" type="password" v-model="password" :error="errors.password"
+          @blur="validateField('password')" />
 
         <!-- Confirm Password -->
         <InputField icon="fa-lock" placeholder="Confirm Password" type="password" v-model="confirmPassword"
@@ -134,7 +138,17 @@ const validateField = (field) => {
         : "Email must end with @gmail.com"
       break
     case "password":
-      errors.value.password = password.value ? "" : "Password is required"
+      if (!password.value) {
+        errors.value.password = "Password is required"
+      } else {
+        const strongPasswordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/
+        if (!strongPasswordRegex.test(password.value)) {
+          errors.value.password =
+            "Password must be at least 8 characters, include uppercase, lowercase, number, and symbol"
+        } else {
+          errors.value.password = ""
+        }
+      }
       break
     case "confirmPassword":
       errors.value.confirmPassword =

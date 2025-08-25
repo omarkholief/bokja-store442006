@@ -4,7 +4,8 @@
 
       <!-- Left side image -->
       <div class="bg-gradient-to-b from-teal-400 to-teal-500 flex-1 flex items-center justify-center p-6">
-        <img src="/public/images/19489b707acd1e15155152bafaa66e8add13383e.png" alt="Login Illustration" class="max-w-full h-auto" />
+        <img src="/public/images/19489b707acd1e15155152bafaa66e8add13383e.png" alt="Login Illustration"
+          class="max-w-full h-auto" />
       </div>
 
       <!-- Right side form -->
@@ -20,7 +21,8 @@
 
         <!-- Email -->
         <div class="mb-4">
-          <div :class="['flex items-center border rounded-lg px-3 py-2 gap-2', errors.email ? 'border-red-500' : 'border-gray-300']">
+          <div
+            :class="['flex items-center border rounded-lg px-3 py-2 gap-2', errors.email ? 'border-red-500' : 'border-gray-300']">
             <i class="fa-solid fa-envelope text-gray-400"></i>
             <input v-model="email" type="email" placeholder="Email" class="flex-1 outline-none" />
           </div>
@@ -29,11 +31,14 @@
 
         <!-- Password -->
         <div class="mb-4">
-          <div :class="['flex items-center border rounded-lg px-3 py-2 gap-2', errors.password ? 'border-red-500' : 'border-gray-300']">
+          <div
+            :class="['flex items-center border rounded-lg px-3 py-2 gap-2', errors.password ? 'border-red-500' : 'border-gray-300']">
             <i class="fa-solid fa-lock text-gray-400"></i>
             <input v-model="password" type="password" placeholder="Password" class="flex-1 outline-none" />
           </div>
           <p v-if="errors.password" class="text-red-500 text-sm mt-1">{{ errors.password }}</p>
+
+          
         </div>
 
         <!-- Remember me -->
@@ -42,11 +47,13 @@
             <input type="checkbox" v-model="rememberMe" class="cursor-pointer" />
             <span class="cursor-pointer">Remember me</span>
           </label>
-          <button class="text-teal-500 hover:underline cursor-pointer" @click="showForgotPassword = true">Forget Password?</button>
+          <button class="text-teal-500 hover:underline cursor-pointer" @click="showForgotPassword = true">Forget
+            Password?</button>
         </div>
 
         <!-- Login button -->
-        <button @click="login" class="w-full bg-teal-500 text-white py-3 rounded-lg hover:bg-teal-600 transition cursor-pointer">
+        <button @click="login"
+          class="w-full bg-teal-500 text-white py-3 rounded-lg hover:bg-teal-600 transition cursor-pointer">
           Login
         </button>
 
@@ -58,7 +65,8 @@
         </div>
 
         <!-- Google -->
-        <button class="w-full border border-gray-300 py-3 rounded-lg flex justify-center items-center gap-2 hover:bg-gray-50">
+        <button
+          class="w-full border border-gray-300 py-3 rounded-lg flex justify-center items-center gap-2 hover:bg-gray-50">
           <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="w-5 h-5" />
           Google
         </button>
@@ -69,11 +77,14 @@
     <div v-if="showForgotPassword" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
       <div class="bg-white p-6 rounded-xl shadow-lg w-full max-w-md">
         <h3 class="text-xl font-bold mb-4">Reset Password</h3>
-        <input type="password" v-model="newPassword" placeholder="Enter new password" class="w-full border rounded-lg px-3 py-2 mb-3" />
-        <input type="password" v-model="confirmPassword" placeholder="Confirm password" class="w-full border rounded-lg px-3 py-2 mb-4" />
+        <input type="password" v-model="newPassword" placeholder="Enter new password"
+          class="w-full border rounded-lg px-3 py-2 mb-3" />
+        <input type="password" v-model="confirmPassword" placeholder="Confirm password"
+          class="w-full border rounded-lg px-3 py-2 mb-4" />
         <div class="flex justify-end gap-3">
           <button @click="showForgotPassword = false" class="px-4 py-2 border rounded-lg cursor-pointer">Cancel</button>
-          <button @click="resetPassword" class="px-4 py-2 bg-teal-500 text-white rounded-lg cursor-pointer">Save</button>
+          <button @click="resetPassword"
+            class="px-4 py-2 bg-teal-500 text-white rounded-lg cursor-pointer">Save</button>
         </div>
       </div>
     </div>
@@ -105,12 +116,20 @@ const login = () => {
 
   if (!password.value) {
     errors.value.password = "Password is required"
+  } else {
+    // تحقق من قوة الباسورد
+    const strongPasswordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/
+    if (!strongPasswordRegex.test(password.value)) {
+      errors.value.password =
+        "Password must be at least 8 characters, include uppercase, lowercase, number, and symbol"
+    }
   }
 
   if (Object.keys(errors.value).length === 0) {
     router.push("/home")
   }
 }
+
 
 const resetPassword = () => {
   if (!newPassword.value || !confirmPassword.value) {

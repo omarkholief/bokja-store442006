@@ -1,6 +1,6 @@
 <!-- components/Navbar.vue -->
 <template>
-  <nav class="shadow-sm w-full">
+  <nav class="shadow-sm w-full sticky top-0 z-50 bg-white">
     <div class="max-w-[1300px] mx-auto px-4 py-3 flex justify-between items-center">
       <!-- Logo -->
       <div class="flex items-center gap-2">
