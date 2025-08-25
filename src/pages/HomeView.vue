@@ -28,7 +28,7 @@
 
             <!-- Image -->
             <div class="flex-1 flex flex-col items-center mt-6 md:mt-0">
-              <img src="/public/images/17054f55cad6f3b11d5ce7cbdfac6d2aab21297b.png" alt="Slide"
+              <img src="/images/17054f55cad6f3b11d5ce7cbdfac6d2aab21297b.png" alt="Slide"
                 class="w-full h-[400px] object-contain" />
               <button class="bg-white px-5 py-2 rounded-full mt-4 w-40 cursor-pointer uppercase">
                 Shop Now
@@ -51,7 +51,7 @@
     <!-- Grid -->
     <div class="hidden sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
       <div v-for="(product, index) in products" :key="index" @click="$router.push(`/category/${product.category}`)"
-        class="bg-white rounded-lg p-4 flex flex-col shadow hover:shadow-lg transition relative">
+        class="bg-white rounded-lg p-4 flex flex-col shadow hover:shadow-lg transition relative cursor-pointer">
         <!-- Heart Icon -->
         <button @click="toggleFavorite(product)">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 cursor-pointer absolute right-5" fill="currentColor"
@@ -129,7 +129,7 @@
       <div class="flex flex-col sm:flex-row md:flex-col lg:flex-col items-center gap-8 lg:gap-1">
         <!-- Item -->
         <div class="flex flex-col lg:flex-row items-center text-center w-56 min-h-[160px]">
-          <img src="/public/images/172aea7deef627acecd1cc758280eb11f81367e7.png" alt="Order" class="w-12 h-12 mb-3" />
+          <img src="/images/172aea7deef627acecd1cc758280eb11f81367e7.png" alt="Order" class="w-12 h-12 mb-3" />
           <div class="lg:flex lg:flex-col lg:items-center lg:text-center">
             <h3 class="font-semibold text-gray-900 mb-1">You order receive</h3>
             <p class="text-gray-600 text-sm">Order your favorite items online.</p>
@@ -138,7 +138,7 @@
 
         <!-- Item -->
         <div class="flex flex-col lg:flex-row items-center text-center w-56 min-h-[160px]">
-          <img src="/public/images/b282e2aa8a623a0a55aac4e7bb5469c01b4d7736.png" alt="Payment" class="w-12 h-12 mb-3" />
+          <img src="/images/b282e2aa8a623a0a55aac4e7bb5469c01b4d7736.png" alt="Payment" class="w-12 h-12 mb-3" />
           <div class="flex flex-col items-center text-center">
             <h3 class="font-semibold text-gray-900 mb-1">Payment Security</h3>
             <p class="text-gray-600 text-sm">We provide all secure payment methods to you.</p>
@@ -147,7 +147,7 @@
 
         <!-- Item -->
         <div class="flex flex-col lg:flex-row items-center text-center w-56 min-h-[160px]">
-          <img src="/public/images/833bcd627e1838208e347233cbefda8f6d867367.png" alt="Delivery"
+          <img src="/images/833bcd627e1838208e347233cbefda8f6d867367.png" alt="Delivery"
             class="w-12 h-12 mb-3" />
             <div class="flex flex-col items-center text-center">
               <h3 class="font-semibold text-gray-900 mb-1">Order Delivery</h3>
@@ -169,8 +169,8 @@
     <!-- Grid -->
     <div class="hidden sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
       <div v-for="(product, index) in featuredProducts" :key="index"
-        @click="$router.push(`/category/${product.categoryId}`)"
-        class="bg-white rounded-lg p-4 flex flex-col shadow hover:shadow-lg transition relative">
+        @click="$router.push(`/category/${product.category}`)"
+        class="bg-white rounded-lg p-4 flex flex-col shadow hover:shadow-lg transition relative cursor-pointer">
         <!-- Heart Icon -->
         <button @click="toggleFavorite(product)">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 cursor-pointer absolute right-5" fill="currentColor"
@@ -266,35 +266,35 @@ const products = [
     name: 'Olive Oil',
     category: 'Food',
     price: 240,
-    image: '/public/images/64f92ff4e093c06b445b83810fea8b9f9167b312 (1).png',
+    image: '/images/64f92ff4e093c06b445b83810fea8b9f9167b312 (1).png',
     title: 'A touch watch equipped with modern systems to benefit people',
   },
   {
     name: 'Touch Watch',
     category: 'Electronics',
     price: 200,
-    image: '/public/images/7ab57a846cd56bb947e76420b1f4e60193d7f82f (1).png',
+    image: '/images/7ab57a846cd56bb947e76420b1f4e60193d7f82f (1).png',
     title: 'A touch watch equipped with modern systems to benefit people',
   },
   {
     name: 'Green Bag',
     category: 'bags',
     price: 500,
-    image: '/public/images/92bcdd1161f4a4b5c045319a680732b11da6ed86 (1).png',
+    image: '/images/92bcdd1161f4a4b5c045319a680732b11da6ed86 (1).png',
     title: 'A touch watch equipped with modern systems to benefit people',
   },
   {
     name: 'Orange',
     category: 'Food',
     price: 20,
-    image: '/public/images/e7ffe1c3e626545a63a24f0f4a03486f8c920777 (1).png',
+    image: '/images/e7ffe1c3e626545a63a24f0f4a03486f8c920777 (1).png',
     title: 'A touch watch equipped with modern systems to benefit people',
   },
   {
     name: 'Headphone',
     category: 'Electronics',
     price: 260,
-    image: '/public/images/b5da2dc712b83bfd274d000aaa0b3f5b636128ad (1).png',
+    image: '/images/b5da2dc712b83bfd274d000aaa0b3f5b636128ad (1).png',
     title: 'A touch watch equipped with modern systems to benefit people',
   },
 ]
@@ -304,70 +304,70 @@ const featuredProducts = [
     name: 'Black Bag',
     category: 'bags',
     price: 260,
-    image: '/public/images/af141f42b21a332c81c5dfdbe5c9a953f53c3880.png',
+    image: '/images/af141f42b21a332c81c5dfdbe5c9a953f53c3880.png',
     title: 'A touch watch equipped with modern systems to benefit people',
   },
   {
     name: 'Kashmir Bag',
     category: 'bags',
     price: 500,
-    image: '/public/images/613d571225293a510ce25fb18819dfc5779169a6.png',
+    image: '/images/613d571225293a510ce25fb18819dfc5779169a6.png',
     title: 'A touch watch equipped with modern systems to benefit people',
   },
   {
     name: 'Olive Oil',
     category: 'Food',
     price: 260,
-    image: '/public/images/64f92ff4e093c06b445b83810fea8b9f9167b312 (1).png',
+    image: '/images/64f92ff4e093c06b445b83810fea8b9f9167b312 (1).png',
     title: 'A touch watch equipped with modern systems to benefit people',
   },
   {
     name: 'Pink Bag',
     category: 'bags',
     price: 200,
-    image: '/public/images/597751ca2928afb32a26ca44f3821fc56973b6d2.png',
+    image: '/images/597751ca2928afb32a26ca44f3821fc56973b6d2.png',
     title: 'A touch watch equipped with modern systems to benefit people',
   },
   {
     name: 'Handmade Bag',
     category: 'bags',
     price: 480,
-    image: '/public/images/8479e0930bc4723326670857d692196f28d7729c.png',
+    image: '/images/8479e0930bc4723326670857d692196f28d7729c.png',
     title: 'A touch watch equipped with modern systems to benefit people',
   },
   {
     name: 'Green Bag',
     category: 'bags',
     price: 500,
-    image: '/public/images/92bcdd1161f4a4b5c045319a680732b11da6ed86 (1).png',
+    image: '/images/92bcdd1161f4a4b5c045319a680732b11da6ed86 (1).png',
     title: 'A touch watch equipped with modern systems to benefit people',
   },
   {
     name: 'Baby Orange Bag',
     category: 'bags',
     price: 120,
-    image: '/public/images/8c35632de82be8decbbd19dea481edd439f2cd84.png',
+    image: '/images/8c35632de82be8decbbd19dea481edd439f2cd84.png',
     title: 'A touch watch equipped with modern systems to benefit people',
   },
   {
     name: 'Touch Watch',
-    category: 'watches',
+    category: 'Electronics',
     price: 200,
-    image: '/public/images/7ab57a846cd56bb947e76420b1f4e60193d7f82f (1).png',
+    image: '/images/7ab57a846cd56bb947e76420b1f4e60193d7f82f (1).png',
     title: 'A touch watch equipped with modern systems to benefit people',
   },
   {
     name: 'Yellow Bag',
     category: 'bags',
     price: 500,
-    image: '/public/images/d94561450d454c34a0149d737ef1ad6e2e4c8974.png',
+    image: '/images/d94561450d454c34a0149d737ef1ad6e2e4c8974.png',
     title: 'A touch watch equipped with modern systems to benefit people',
   },
   {
     name: 'Orange Bag',
     category: 'bags',
     price: 450,
-    image: '/public/images/658e32fd077e34938624166ef07c67f2781bc2e5.png',
+    image: '/images/658e32fd077e34938624166ef07c67f2781bc2e5.png',
     title: 'A touch watch equipped with modern systems to benefit people',
   },
 ]

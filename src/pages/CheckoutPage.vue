@@ -48,9 +48,9 @@
 
           <!-- Payment Icons -->
           <div class="flex gap-3">
-            <img src="/public//images/OIP.jpeg" alt="MasterCard" class="h-8" />
-            <img src="/public/images/visa-inc-png-18.png" alt="Visa" class="h-8" />
-            <img src="/public/images/1655980011paypal-icon-transparent.png" alt="PayPal" class="h-8" />
+            <img src="/images/OIP.jpeg" alt="MasterCard" class="h-8" />
+            <img src="/images/visa-inc-png-18.png" alt="Visa" class="h-8" />
+            <img src="/images/1655980011paypal-icon-transparent.png" alt="PayPal" class="h-8" />
           </div>
 
           <!-- Card Name -->
@@ -140,7 +140,7 @@
           ✖
         </button>
         <div class="flex flex-col items-center text-center">
-          <img src="/public/images/61f653f7e866efebe94651c6a57da01793091b46.gif" alt="Confirmed" class="w-40 mb-4" />
+          <img src="/images/61f653f7e866efebe94651c6a57da01793091b46.gif" alt="Confirmed" class="w-40 mb-4" />
           <h2 class="text-lg font-bold mb-2">Your order is Confirmed</h2>
           <button @click="trackOrder"
             class="bg-teal-600 hover:bg-teal-700 text-white px-6 py-2 rounded-full cursor-pointer">

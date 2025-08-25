@@ -6,7 +6,7 @@
       <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center mb-8">
         <div class="md:col-span-1 flex justify-center">
           <div class="rounded-full p-4">
-            <img src="/public/images/b4e2412138433ca18c8045296a11b75a64ec0004.png" alt="Contact Us" class="rounded-full">
+            <img src="/images/b4e2412138433ca18c8045296a11b75a64ec0004.png" alt="Contact Us" class="rounded-full">
           </div>
         </div>
         <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-4">

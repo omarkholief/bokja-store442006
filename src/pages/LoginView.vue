@@ -4,7 +4,7 @@
 
       <!-- Left side image -->
       <div class="bg-gradient-to-b from-teal-400 to-teal-500 flex-1 flex items-center justify-center p-6">
-        <img src="/public/images/19489b707acd1e15155152bafaa66e8add13383e.png" alt="Login Illustration"
+        <img src="/images/19489b707acd1e15155152bafaa66e8add13383e.png" alt="Login Illustration"
           class="max-w-full h-auto" />
       </div>
 
@@ -38,7 +38,7 @@
           </div>
           <p v-if="errors.password" class="text-red-500 text-sm mt-1">{{ errors.password }}</p>
 
-          
+
         </div>
 
         <!-- Remember me -->

@@ -10,11 +10,11 @@
         </div>
         <p class="text-sm text-[#D9D9D9] mb-2">We Accept:</p>
         <div class="flex space-x-2">
-          <img src="/public/images/visa-inc-png-18.png" alt="Visa" class="h-6 bg-white p-1">
-          <img src="/public/images/OIP.jpeg" alt="MasterCard" class="h-6 bg-white p-1">
-          <img src="/public/images/1655980011paypal-icon-transparent.png" alt="PayPal" class="h-6 bg-white p-1">
-          <img src="/public/images/stripe1461.jpg" alt="Stripe" class="h-6 bg-white p-1">
-          <img src="/public/images/google-pay-logo-transparent-free-png.webp" alt="Google Pay" class="h-6 bg-white p-1">
+          <img src="/images/visa-inc-png-18.png" alt="Visa" class="h-6 bg-white p-1">
+          <img src="/images/OIP.jpeg" alt="MasterCard" class="h-6 bg-white p-1">
+          <img src="/images/1655980011paypal-icon-transparent.png" alt="PayPal" class="h-6 bg-white p-1">
+          <img src="/images/stripe1461.jpg" alt="Stripe" class="h-6 bg-white p-1">
+          <img src="/images/google-pay-logo-transparent-free-png.webp" alt="Google Pay" class="h-6 bg-white p-1">
         </div>
       </div>
 
@@ -51,15 +51,15 @@
       <div>
         <h3 class="text-2xl mb-4 border-b-2 border-[#008D7C] w-fit">Let’s contact</h3>
         <div class="flex space-x-3 mb-4">
-          <a href="#" class="bg-[#2AABEE] rounded-2xl p-1"><img src="/public/icons/telegram.svg"
+          <a href="#" class="bg-[#2AABEE] rounded-2xl p-1"><img src="/icons/telegram.svg"
               class="w-6 h-6 text-[#FFFFFF]" alt="Telegram"></a>
-          <a href="#" class="bg-[#1877F2] rounded-2xl p-1"><img src="/public/icons/facebook.svg" class="w-6 h-6"
+          <a href="#" class="bg-[#1877F2] rounded-2xl p-1"><img src="/icons/facebook.svg" class="w-6 h-6"
               alt="Facebook"></a>
           <a href="#" class="bg-gradient-to-tr from-yellow-400 via-pink-500 rounded-2xl p-1"><img
-              src="/public/icons/instagram.svg" class="w-6 h-6" alt="Instagram"></a>
-          <a href="#" class="bg-[#25D366] rounded-2xl p-1"><img src="/public/icons/whatsapp.svg" class="w-6 h-6"
+              src="/icons/instagram.svg" class="w-6 h-6" alt="Instagram"></a>
+          <a href="#" class="bg-[#25D366] rounded-2xl p-1"><img src="/icons/whatsapp.svg" class="w-6 h-6"
               alt="WhatsApp"></a>
-          <a href="#" class="bg-[#FF0000] rounded-2xl p-1"><img src="/public/icons/youtube.svg" class="w-6 h-6"
+          <a href="#" class="bg-[#FF0000] rounded-2xl p-1"><img src="/icons/youtube.svg" class="w-6 h-6"
               alt="YouTube"></a>
         </div>
         <p class="text-sm mb-2">Drop your email below to get notified, whenever we upload discount coupons of your

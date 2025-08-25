@@ -119,7 +119,7 @@ export default {
           color: 'black',
           size: 'M',
           inStock: true,
-          image: '/public/images/af141f42b21a332c81c5dfdbe5c9a953f53c3880.png',
+          image: '/images/af141f42b21a332c81c5dfdbe5c9a953f53c3880.png',
           title: 'Stylish black bag for everyday use'
         },
         {
@@ -129,7 +129,7 @@ export default {
           color: 'black',
           size: 'M',
           inStock: true,
-          image: '/public/images/b5da2dc712b83bfd274d000aaa0b3f5b636128ad (1).png',
+          image: '/images/b5da2dc712b83bfd274d000aaa0b3f5b636128ad (1).png',
           title: 'A touch watch equipped with modern systems to benefit people',
         },
         {
@@ -139,7 +139,7 @@ export default {
           color: 'pink',
           size: 'L',
           inStock: false,
-          image: '/public/images/613d571225293a510ce25fb18819dfc5779169a6.png',
+          image: '/images/613d571225293a510ce25fb18819dfc5779169a6.png',
           title: 'Elegant Kashmir bag perfect for special occasions'
         },
         {
@@ -147,10 +147,20 @@ export default {
           category: 'Food',
           price: 260,
           color: 'yellow',
+          size: 'L',
+          inStock: true,
+          image: '/images/64f92ff4e093c06b445b83810fea8b9f9167b312 (1).png',
+          title: 'Premium quality olive oil'
+        },
+        {
+          name: 'Orange',
+          category: 'Food',
+          price: 260,
+          color: 'yellow',
           size: 'S',
           inStock: true,
-          image: '/public/images/64f92ff4e093c06b445b83810fea8b9f9167b312 (1).png',
-          title: 'Premium quality olive oil'
+          image: '/images/e7ffe1c3e626545a63a24f0f4a03486f8c920777 (1).png',
+          title: 'Good quality orange'
         },
         {
           name: 'Pink Bag',
@@ -159,7 +169,7 @@ export default {
           color: 'pink',
           size: 'S',
           inStock: true,
-          image: '/public/images/597751ca2928afb32a26ca44f3821fc56973b6d2.png',
+          image: '/images/597751ca2928afb32a26ca44f3821fc56973b6d2.png',
           title: 'Trendy pink bag'
         },
         {
@@ -169,7 +179,7 @@ export default {
           color: 'red',
           size: 'M',
           inStock: true,
-          image: '/public/images/8479e0930bc4723326670857d692196f28d7729c.png',
+          image: '/images/8479e0930bc4723326670857d692196f28d7729c.png',
           title: 'Handmade with love and care'
         },
         {
@@ -179,7 +189,7 @@ export default {
           color: 'green',
           size: 'L',
           inStock: false,
-          image: '/public/images/92bcdd1161f4a4b5c045319a680732b11da6ed86 (1).png',
+          image: '/images/92bcdd1161f4a4b5c045319a680732b11da6ed86 (1).png',
           title: 'Spacious green bag'
         },
         {
@@ -189,7 +199,7 @@ export default {
           color: 'orange',
           size: 'S',
           inStock: true,
-          image: '/public/images/8c35632de82be8decbbd19dea481edd439f2cd84.png',
+          image: '/images/8c35632de82be8decbbd19dea481edd439f2cd84.png',
           title: 'Cute baby orange bag'
         },
         {
@@ -199,7 +209,7 @@ export default {
           color: 'black',
           size: 'M',
           inStock: true,
-          image: '/public/images/7ab57a846cd56bb947e76420b1f4e60193d7f82f (1).png',
+          image: '/images/7ab57a846cd56bb947e76420b1f4e60193d7f82f (1).png',
           title: 'Modern touch watch'
         },
         {
@@ -209,7 +219,7 @@ export default {
           color: 'yellow',
           size: 'XL',
           inStock: true,
-          image: '/public/images/d94561450d454c34a0149d737ef1ad6e2e4c8974.png',
+          image: '/images/d94561450d454c34a0149d737ef1ad6e2e4c8974.png',
           title: 'Bright yellow bag'
         },
         {
@@ -219,7 +229,7 @@ export default {
           color: 'orange',
           size: 'L',
           inStock: false,
-          image: '/public/images/658e32fd077e34938624166ef07c67f2781bc2e5.png',
+          image: '/images/658e32fd077e34938624166ef07c67f2781bc2e5.png',
           title: 'Classic orange bag'
         },
       ]

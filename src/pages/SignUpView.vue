@@ -4,7 +4,7 @@
 
       <!-- Left Side Image -->
       <div class="bg-gradient-to-b from-teal-400 to-teal-500 flex-1 flex items-center justify-center p-6">
-        <img src="/public/images/19489b707acd1e15155152bafaa66e8add13383e.png" alt="SignUp Illustration"
+        <img src="/images/19489b707acd1e15155152bafaa66e8add13383e.png" alt="SignUp Illustration"
           class="max-w-full h-auto" />
       </div>
 

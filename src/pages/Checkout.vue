@@ -125,31 +125,31 @@ const relatedProducts = ref([
     name: 'Pink Bag',
     desc: 'Elegant pink bag for everyday use',
     price: 200,
-    image: '/public/images/597751ca2928afb32a26ca44f3821fc56973b6d2.png',
+    image: '/images/597751ca2928afb32a26ca44f3821fc56973b6d2.png',
   },
   {
     name: 'Baby Orange Bag',
     desc: 'Trendy orange mini bag',
     price: 120,
-    image: '/public/images/8c35632de82be8decbbd19dea481edd439f2cd84.png',
+    image: '/images/8c35632de82be8decbbd19dea481edd439f2cd84.png',
   },
   {
     name: 'Kashmir Bag',
     desc: 'Premium Kashmir style handbag',
     price: 500,
-    image: '/public/images/613d571225293a510ce25fb18819dfc5779169a6.png',
+    image: '/images/613d571225293a510ce25fb18819dfc5779169a6.png',
   },
   {
     name: 'Handmade Bag',
     desc: 'Unique handmade artisan bag',
     price: 480,
-    image: '/public/images/8479e0930bc4723326670857d692196f28d7729c.png',
+    image: '/images/8479e0930bc4723326670857d692196f28d7729c.png',
   },
   {
     name: 'Black Bag',
     desc: 'Classic black leather handbag',
     price: 260,
-    image: '/public/images/af141f42b21a332c81c5dfdbe5c9a953f53c3880.png',
+    image: '/images/af141f42b21a332c81c5dfdbe5c9a953f53c3880.png',
   },
 ])
 </script>
