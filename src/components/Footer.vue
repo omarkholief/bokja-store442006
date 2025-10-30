@@ -51,15 +51,15 @@
       <div>
         <h3 class="text-2xl mb-4 border-b-2 border-[#008D7C] w-fit">Let’s contact</h3>
         <div class="flex space-x-3 mb-4">
-          <a href="#" class="bg-[#2AABEE] rounded-2xl p-1"><img src="/icons/telegram.svg"
+          <a href="https://web.telegram.org/a/#1655873927" target="_blank" class="bg-[#2AABEE] rounded-2xl p-1"><img src="/icons/telegram.svg"
               class="w-6 h-6 text-[#FFFFFF]" alt="Telegram"></a>
-          <a href="#" class="bg-[#1877F2] rounded-2xl p-1"><img src="/icons/facebook.svg" class="w-6 h-6"
+          <a href="https://www.facebook.com/omar.kholef.5" target="_blank" class="bg-[#1877F2] rounded-2xl p-1"><img src="/icons/facebook.svg" class="w-6 h-6"
               alt="Facebook"></a>
-          <a href="#" class="bg-gradient-to-tr from-yellow-400 via-pink-500 rounded-2xl p-1"><img
+          <a href="https://www.instagram.com/omaribrahim507/" target="_blank" class="bg-gradient-to-tr from-yellow-400 via-pink-500 rounded-2xl p-1"><img
               src="/icons/instagram.svg" class="w-6 h-6" alt="Instagram"></a>
-          <a href="#" class="bg-[#25D366] rounded-2xl p-1"><img src="/icons/whatsapp.svg" class="w-6 h-6"
+          <a href="https://wa.me/201020304941?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%21%20%D9%83%D9%8A%D9%81%20%D8%A3%D8%B3%D8%A7%D8%B9%D8%AF%D9%83%D8%9F" target="_blank" class="bg-[#25D366] rounded-2xl p-1"><img src="/icons/whatsapp.svg" class="w-6 h-6"
               alt="WhatsApp"></a>
-          <a href="#" class="bg-[#FF0000] rounded-2xl p-1"><img src="/icons/youtube.svg" class="w-6 h-6"
+          <a href="https://www.youtube.com/@omarkholief343" target="_blank" class="bg-[#FF0000] rounded-2xl p-1"><img src="/icons/youtube.svg" class="w-6 h-6"
               alt="YouTube"></a>
         </div>
         <p class="text-sm mb-2">Drop your email below to get notified, whenever we upload discount coupons of your
