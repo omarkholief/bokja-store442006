@@ -93,7 +93,7 @@
 </template>
 
 <script>
-import { useCartStore } from '../stores/cart'
+import { useCartStore } from '@/stores/cart'
 import { useRouter } from 'vue-router'
 
 export default {

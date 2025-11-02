@@ -15,9 +15,6 @@
 </template>
 
 <script setup>
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
 import TheFeatured from '@/components/TheHome/TheFeatured.vue'
 import TheStore from '@/components/TheHome/TheStore.vue'
 import TheNewArrivals from '@/components/TheHome/TheNewArrivals.vue'
